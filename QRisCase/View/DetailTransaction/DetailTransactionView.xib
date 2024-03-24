@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailTransactionView" customModule="QRisCase" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonKeluar" destination="QnB-tW-dsE" id="fUq-s9-EBY"/>
+                <outlet property="buttonKonfirmasi" destination="W4h-UA-9z4" id="2fa-DI-m4J"/>
+                <outlet property="labelID" destination="1cA-RD-5ck" id="V9a-IV-beC"/>
+                <outlet property="labelNamaMerchant" destination="mpc-YR-5Lj" id="Udf-uu-PeT"/>
+                <outlet property="labelNominalTransaksi" destination="RDw-w8-pXt" id="GMC-v7-zAi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailTransactionView" customModule="QRisCase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="451"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="CSq-0m-HgH">
+                    <rect key="frame" x="16" y="75" width="361" height="322"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cA-RD-5ck">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-Iw-t0c">
+                            <rect key="frame" x="0.0" y="93.333333333333343" width="361" height="112"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="su6-Wo-d8H">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="48"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Merchant:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV3-fe-AC8">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="3Wt-ig-ldE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Merchant" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpc-YR-5Lj">
+                                            <rect key="frame" x="0.0" y="26" width="361" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="Abi-22-Gif"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eKM-ut-xl6">
+                                    <rect key="frame" x="0.0" y="64" width="361" height="48"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nominal Transaksi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCz-oJ-KWl">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="9Oo-KH-XVR"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nominal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDw-w8-pXt">
+                                            <rect key="frame" x="0.0" y="25.999999999999972" width="361" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="eh9-TF-MBZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Yxn-Kd-VIg">
+                            <rect key="frame" x="0.0" y="278" width="361" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnB-tW-dsE">
+                                    <rect key="frame" x="0.0" y="0.0" width="135" height="44"/>
+                                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Keluar"/>
+                                    <connections>
+                                        <action selector="didClickKeluar:" destination="-1" eventType="touchUpInside" id="kE9-wr-yNi"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4h-UA-9z4">
+                                    <rect key="frame" x="151" y="0.0" width="210" height="44"/>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="Pd1-bS-QNy"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Konfirmasi"/>
+                                    <connections>
+                                        <action selector="didClickKonfirmasi:" destination="-1" eventType="touchUpInside" id="83r-Vh-U32"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CSq-0m-HgH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="LaQ-5Z-rwk"/>
+                <constraint firstItem="CSq-0m-HgH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="aTJ-hc-RrJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CSq-0m-HgH" secondAttribute="trailing" constant="16" id="bdL-3u-O4b"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CSq-0m-HgH" secondAttribute="bottom" constant="20" id="uFs-YV-Thy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonKeluar" destination="QnB-tW-dsE" id="Ff8-0G-XRt"/>
+                <outlet property="buttonKonfirmasi" destination="W4h-UA-9z4" id="ZLF-tc-fFB"/>
+                <outlet property="labelID" destination="1cA-RD-5ck" id="S3r-d8-519"/>
+                <outlet property="labelNamaMerchant" destination="mpc-YR-5Lj" id="cKL-4g-a6q"/>
+                <outlet property="labelNominalTransaksi" destination="RDw-w8-pXt" id="vTW-Tt-9wP"/>
+            </connections>
+            <point key="canvasLocation" x="46.564885496183201" y="-79.929577464788736"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

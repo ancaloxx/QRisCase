@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D409DA922BAC4A39009F6C16 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D409DA912BAC4A39009F6C16 /* QRScanViewController.swift */; };
+		D409DA952BAC5810009F6C16 /* DetailTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D409DA942BAC5810009F6C16 /* DetailTransactionView.swift */; };
+		D409DA972BAC5822009F6C16 /* DetailTransactionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D409DA962BAC5822009F6C16 /* DetailTransactionView.xib */; };
+		D4192F702BAD4745008A4A12 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4192F6F2BAD4745008A4A12 /* Extension+String.swift */; };
+		D4192F732BAD519F008A4A12 /* TransaksiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4192F722BAD519F008A4A12 /* TransaksiViewModel.swift */; };
+		D4192F772BAD5564008A4A12 /* TransaksiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4192F752BAD5564008A4A12 /* TransaksiCell.swift */; };
+		D4192F782BAD5564008A4A12 /* TransaksiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4192F762BAD5564008A4A12 /* TransaksiCell.xib */; };
+		D4192F7A2BAD5809008A4A12 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4192F792BAD5809008A4A12 /* Extension+UITableViewCell.swift */; };
+		D4438FF02BAC20EB00DEE2AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4438FEF2BAC20EB00DEE2AB /* AppDelegate.swift */; };
+		D4438FF22BAC20EB00DEE2AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4438FF12BAC20EB00DEE2AB /* SceneDelegate.swift */; };
+		D4438FF42BAC20EB00DEE2AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4438FF32BAC20EB00DEE2AB /* ViewController.swift */; };
+		D4438FF72BAC20EB00DEE2AB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D4438FF62BAC20EB00DEE2AB /* Base */; };
+		D4438FF92BAC20EC00DEE2AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4438FF82BAC20EC00DEE2AB /* Assets.xcassets */; };
+		D4438FFC2BAC20EC00DEE2AB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D4438FFB2BAC20EC00DEE2AB /* Base */; };
+		D44390072BAC20EC00DEE2AB /* QRisCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44390062BAC20EC00DEE2AB /* QRisCaseTests.swift */; };
+		D44390112BAC20EC00DEE2AB /* QRisCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44390102BAC20EC00DEE2AB /* QRisCaseUITests.swift */; };
+		D44390132BAC20EC00DEE2AB /* QRisCaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44390122BAC20EC00DEE2AB /* QRisCaseUITestsLaunchTests.swift */; };
+		D44E973C2BAD43D900C94CC1 /* Saldo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44E973A2BAD43D900C94CC1 /* Saldo+CoreDataClass.swift */; };
+		D44E973D2BAD43D900C94CC1 /* Saldo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44E973B2BAD43D900C94CC1 /* Saldo+CoreDataProperties.swift */; };
+		D4606EBF2BAC80A70065E51B /* RiwayatTransaksi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4606EBD2BAC80A70065E51B /* RiwayatTransaksi.xcdatamodeld */; };
+		D4606EC22BAC81CC0065E51B /* Transaksi+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4606EC02BAC81CC0065E51B /* Transaksi+CoreDataClass.swift */; };
+		D4606EC32BAC81CC0065E51B /* Transaksi+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4606EC12BAC81CC0065E51B /* Transaksi+CoreDataProperties.swift */; };
+		D4606EC62BAC81FF0065E51B /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4606EC52BAC81FF0065E51B /* CoreDataService.swift */; };
+		D4606EC92BAC8A1C0065E51B /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4606EC82BAC8A1C0065E51B /* Extension+UIViewController.swift */; };
+		D4606ECB2BAC8E5D0065E51B /* TransaksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4606ECA2BAC8E5D0065E51B /* TransaksiViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D44390032BAC20EC00DEE2AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4438FE42BAC20EB00DEE2AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4438FEB2BAC20EB00DEE2AB;
+			remoteInfo = QRisCase;
+		};
+		D443900D2BAC20EC00DEE2AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4438FE42BAC20EB00DEE2AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4438FEB2BAC20EB00DEE2AB;
+			remoteInfo = QRisCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D409DA912BAC4A39009F6C16 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		D409DA942BAC5810009F6C16 /* DetailTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionView.swift; sourceTree = "<group>"; };
+		D409DA962BAC5822009F6C16 /* DetailTransactionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTransactionView.xib; sourceTree = "<group>"; };
+		D4192F6F2BAD4745008A4A12 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		D4192F722BAD519F008A4A12 /* TransaksiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransaksiViewModel.swift; sourceTree = "<group>"; };
+		D4192F752BAD5564008A4A12 /* TransaksiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransaksiCell.swift; sourceTree = "<group>"; };
+		D4192F762BAD5564008A4A12 /* TransaksiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransaksiCell.xib; sourceTree = "<group>"; };
+		D4192F792BAD5809008A4A12 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
+		D4438FEC2BAC20EB00DEE2AB /* QRisCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRisCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4438FEF2BAC20EB00DEE2AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4438FF12BAC20EB00DEE2AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D4438FF32BAC20EB00DEE2AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4438FF62BAC20EB00DEE2AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4438FF82BAC20EC00DEE2AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4438FFB2BAC20EC00DEE2AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4438FFD2BAC20EC00DEE2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44390022BAC20EC00DEE2AB /* QRisCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRisCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44390062BAC20EC00DEE2AB /* QRisCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRisCaseTests.swift; sourceTree = "<group>"; };
+		D443900C2BAC20EC00DEE2AB /* QRisCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRisCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44390102BAC20EC00DEE2AB /* QRisCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRisCaseUITests.swift; sourceTree = "<group>"; };
+		D44390122BAC20EC00DEE2AB /* QRisCaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRisCaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D44E973A2BAD43D900C94CC1 /* Saldo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Saldo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D44E973B2BAD43D900C94CC1 /* Saldo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Saldo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D4606EBE2BAC80A70065E51B /* RiwayatTransaksi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RiwayatTransaksi.xcdatamodel; sourceTree = "<group>"; };
+		D4606EC02BAC81CC0065E51B /* Transaksi+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaksi+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D4606EC12BAC81CC0065E51B /* Transaksi+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaksi+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D4606EC52BAC81FF0065E51B /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		D4606EC82BAC8A1C0065E51B /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		D4606ECA2BAC8E5D0065E51B /* TransaksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransaksiViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4438FE92BAC20EB00DEE2AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4438FFF2BAC20EC00DEE2AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44390092BAC20EC00DEE2AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D409DA932BAC57F5009F6C16 /* DetailTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				D409DA942BAC5810009F6C16 /* DetailTransactionView.swift */,
+				D409DA962BAC5822009F6C16 /* DetailTransactionView.xib */,
+			);
+			path = DetailTransaction;
+			sourceTree = "<group>";
+		};
+		D4192F712BAD5175008A4A12 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D4192F722BAD519F008A4A12 /* TransaksiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D4192F742BAD553E008A4A12 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D4192F752BAD5564008A4A12 /* TransaksiCell.swift */,
+				D4192F762BAD5564008A4A12 /* TransaksiCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D4438FE32BAC20EB00DEE2AB = {
+			isa = PBXGroup;
+			children = (
+				D44E973A2BAD43D900C94CC1 /* Saldo+CoreDataClass.swift */,
+				D44E973B2BAD43D900C94CC1 /* Saldo+CoreDataProperties.swift */,
+				D4606EC02BAC81CC0065E51B /* Transaksi+CoreDataClass.swift */,
+				D4606EC12BAC81CC0065E51B /* Transaksi+CoreDataProperties.swift */,
+				D4606EBD2BAC80A70065E51B /* RiwayatTransaksi.xcdatamodeld */,
+				D4438FEE2BAC20EB00DEE2AB /* QRisCase */,
+				D44390052BAC20EC00DEE2AB /* QRisCaseTests */,
+				D443900F2BAC20EC00DEE2AB /* QRisCaseUITests */,
+				D4438FED2BAC20EB00DEE2AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4438FED2BAC20EB00DEE2AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4438FEC2BAC20EB00DEE2AB /* QRisCase.app */,
+				D44390022BAC20EC00DEE2AB /* QRisCaseTests.xctest */,
+				D443900C2BAC20EC00DEE2AB /* QRisCaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4438FEE2BAC20EB00DEE2AB /* QRisCase */ = {
+			isa = PBXGroup;
+			children = (
+				D4192F742BAD553E008A4A12 /* Cell */,
+				D4606EC72BAC8A090065E51B /* Extension */,
+				D4606EC42BAC81DF0065E51B /* Service */,
+				D4438FEF2BAC20EB00DEE2AB /* AppDelegate.swift */,
+				D4438FF12BAC20EB00DEE2AB /* SceneDelegate.swift */,
+				D44390202BAC21A100DEE2AB /* Controller */,
+				D443901F2BAC219500DEE2AB /* View */,
+				D4192F712BAD5175008A4A12 /* ViewModel */,
+				D4438FF82BAC20EC00DEE2AB /* Assets.xcassets */,
+				D4438FFD2BAC20EC00DEE2AB /* Info.plist */,
+			);
+			path = QRisCase;
+			sourceTree = "<group>";
+		};
+		D44390052BAC20EC00DEE2AB /* QRisCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				D44390062BAC20EC00DEE2AB /* QRisCaseTests.swift */,
+			);
+			path = QRisCaseTests;
+			sourceTree = "<group>";
+		};
+		D443900F2BAC20EC00DEE2AB /* QRisCaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D44390102BAC20EC00DEE2AB /* QRisCaseUITests.swift */,
+				D44390122BAC20EC00DEE2AB /* QRisCaseUITestsLaunchTests.swift */,
+			);
+			path = QRisCaseUITests;
+			sourceTree = "<group>";
+		};
+		D443901F2BAC219500DEE2AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D409DA932BAC57F5009F6C16 /* DetailTransaction */,
+				D4438FF52BAC20EB00DEE2AB /* Main.storyboard */,
+				D4438FFA2BAC20EC00DEE2AB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D44390202BAC21A100DEE2AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4438FF32BAC20EB00DEE2AB /* ViewController.swift */,
+				D409DA912BAC4A39009F6C16 /* QRScanViewController.swift */,
+				D4606ECA2BAC8E5D0065E51B /* TransaksiViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4606EC42BAC81DF0065E51B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D4606EC52BAC81FF0065E51B /* CoreDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D4606EC72BAC8A090065E51B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D4606EC82BAC8A1C0065E51B /* Extension+UIViewController.swift */,
+				D4192F6F2BAD4745008A4A12 /* Extension+String.swift */,
+				D4192F792BAD5809008A4A12 /* Extension+UITableViewCell.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4438FEB2BAC20EB00DEE2AB /* QRisCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44390162BAC20EC00DEE2AB /* Build configuration list for PBXNativeTarget "QRisCase" */;
+			buildPhases = (
+				D4438FE82BAC20EB00DEE2AB /* Sources */,
+				D4438FE92BAC20EB00DEE2AB /* Frameworks */,
+				D4438FEA2BAC20EB00DEE2AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRisCase;
+			productName = QRisCase;
+			productReference = D4438FEC2BAC20EB00DEE2AB /* QRisCase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D44390012BAC20EC00DEE2AB /* QRisCaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44390192BAC20EC00DEE2AB /* Build configuration list for PBXNativeTarget "QRisCaseTests" */;
+			buildPhases = (
+				D4438FFE2BAC20EC00DEE2AB /* Sources */,
+				D4438FFF2BAC20EC00DEE2AB /* Frameworks */,
+				D44390002BAC20EC00DEE2AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44390042BAC20EC00DEE2AB /* PBXTargetDependency */,
+			);
+			name = QRisCaseTests;
+			productName = QRisCaseTests;
+			productReference = D44390022BAC20EC00DEE2AB /* QRisCaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D443900B2BAC20EC00DEE2AB /* QRisCaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D443901C2BAC20EC00DEE2AB /* Build configuration list for PBXNativeTarget "QRisCaseUITests" */;
+			buildPhases = (
+				D44390082BAC20EC00DEE2AB /* Sources */,
+				D44390092BAC20EC00DEE2AB /* Frameworks */,
+				D443900A2BAC20EC00DEE2AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D443900E2BAC20EC00DEE2AB /* PBXTargetDependency */,
+			);
+			name = QRisCaseUITests;
+			productName = QRisCaseUITests;
+			productReference = D443900C2BAC20EC00DEE2AB /* QRisCaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4438FE42BAC20EB00DEE2AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D4438FEB2BAC20EB00DEE2AB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					D44390012BAC20EC00DEE2AB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D4438FEB2BAC20EB00DEE2AB;
+					};
+					D443900B2BAC20EC00DEE2AB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D4438FEB2BAC20EB00DEE2AB;
+					};
+				};
+			};
+			buildConfigurationList = D4438FE72BAC20EB00DEE2AB /* Build configuration list for PBXProject "QRisCase" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4438FE32BAC20EB00DEE2AB;
+			productRefGroup = D4438FED2BAC20EB00DEE2AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4438FEB2BAC20EB00DEE2AB /* QRisCase */,
+				D44390012BAC20EC00DEE2AB /* QRisCaseTests */,
+				D443900B2BAC20EC00DEE2AB /* QRisCaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4438FEA2BAC20EB00DEE2AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4438FF92BAC20EC00DEE2AB /* Assets.xcassets in Resources */,
+				D4438FFC2BAC20EC00DEE2AB /* Base in Resources */,
+				D4438FF72BAC20EB00DEE2AB /* Base in Resources */,
+				D4192F782BAD5564008A4A12 /* TransaksiCell.xib in Resources */,
+				D409DA972BAC5822009F6C16 /* DetailTransactionView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44390002BAC20EC00DEE2AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D443900A2BAC20EC00DEE2AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4438FE82BAC20EB00DEE2AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4606EBF2BAC80A70065E51B /* RiwayatTransaksi.xcdatamodeld in Sources */,
+				D409DA952BAC5810009F6C16 /* DetailTransactionView.swift in Sources */,
+				D44E973C2BAD43D900C94CC1 /* Saldo+CoreDataClass.swift in Sources */,
+				D4192F732BAD519F008A4A12 /* TransaksiViewModel.swift in Sources */,
+				D44E973D2BAD43D900C94CC1 /* Saldo+CoreDataProperties.swift in Sources */,
+				D4192F7A2BAD5809008A4A12 /* Extension+UITableViewCell.swift in Sources */,
+				D4606ECB2BAC8E5D0065E51B /* TransaksiViewController.swift in Sources */,
+				D4606EC22BAC81CC0065E51B /* Transaksi+CoreDataClass.swift in Sources */,
+				D4606EC32BAC81CC0065E51B /* Transaksi+CoreDataProperties.swift in Sources */,
+				D409DA922BAC4A39009F6C16 /* QRScanViewController.swift in Sources */,
+				D4192F702BAD4745008A4A12 /* Extension+String.swift in Sources */,
+				D4438FF42BAC20EB00DEE2AB /* ViewController.swift in Sources */,
+				D4438FF02BAC20EB00DEE2AB /* AppDelegate.swift in Sources */,
+				D4606EC62BAC81FF0065E51B /* CoreDataService.swift in Sources */,
+				D4606EC92BAC8A1C0065E51B /* Extension+UIViewController.swift in Sources */,
+				D4192F772BAD5564008A4A12 /* TransaksiCell.swift in Sources */,
+				D4438FF22BAC20EB00DEE2AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4438FFE2BAC20EC00DEE2AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44390072BAC20EC00DEE2AB /* QRisCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44390082BAC20EC00DEE2AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44390132BAC20EC00DEE2AB /* QRisCaseUITestsLaunchTests.swift in Sources */,
+				D44390112BAC20EC00DEE2AB /* QRisCaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D44390042BAC20EC00DEE2AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4438FEB2BAC20EB00DEE2AB /* QRisCase */;
+			targetProxy = D44390032BAC20EC00DEE2AB /* PBXContainerItemProxy */;
+		};
+		D443900E2BAC20EC00DEE2AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4438FEB2BAC20EB00DEE2AB /* QRisCase */;
+			targetProxy = D443900D2BAC20EC00DEE2AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4438FF52BAC20EB00DEE2AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4438FF62BAC20EB00DEE2AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4438FFA2BAC20EC00DEE2AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4438FFB2BAC20EC00DEE2AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D44390142BAC20EC00DEE2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D44390152BAC20EC00DEE2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D44390172BAC20EC00DEE2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRisCase/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Membutuhkan akses kamera untuk scan QR Code";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancalox.QRisCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D44390182BAC20EC00DEE2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRisCase/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Membutuhkan akses kamera untuk scan QR Code";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancalox.QRisCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D443901A2BAC20EC00DEE2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancalox.QRisCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRisCase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QRisCase";
+			};
+			name = Debug;
+		};
+		D443901B2BAC20EC00DEE2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancalox.QRisCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRisCase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QRisCase";
+			};
+			name = Release;
+		};
+		D443901D2BAC20EC00DEE2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancalox.QRisCaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QRisCase;
+			};
+			name = Debug;
+		};
+		D443901E2BAC20EC00DEE2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancalox.QRisCaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QRisCase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4438FE72BAC20EB00DEE2AB /* Build configuration list for PBXProject "QRisCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44390142BAC20EC00DEE2AB /* Debug */,
+				D44390152BAC20EC00DEE2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44390162BAC20EC00DEE2AB /* Build configuration list for PBXNativeTarget "QRisCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44390172BAC20EC00DEE2AB /* Debug */,
+				D44390182BAC20EC00DEE2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44390192BAC20EC00DEE2AB /* Build configuration list for PBXNativeTarget "QRisCaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D443901A2BAC20EC00DEE2AB /* Debug */,
+				D443901B2BAC20EC00DEE2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D443901C2BAC20EC00DEE2AB /* Build configuration list for PBXNativeTarget "QRisCaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D443901D2BAC20EC00DEE2AB /* Debug */,
+				D443901E2BAC20EC00DEE2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D4606EBD2BAC80A70065E51B /* RiwayatTransaksi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D4606EBE2BAC80A70065E51B /* RiwayatTransaksi.xcdatamodel */,
+			);
+			currentVersion = D4606EBE2BAC80A70065E51B /* RiwayatTransaksi.xcdatamodel */;
+			name = RiwayatTransaksi.xcdatamodeld;
+			path = /Users/ancadev/Documents/upwork_client/QRisCase/RiwayatTransaksi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D4438FE42BAC20EB00DEE2AB /* Project object */;
+}
